@@ -1,0 +1,81 @@
+.App{
+    font-family: ui-sans-serif;
+}
+
+.naviparent{
+    height: 8vh;
+    width: 100%;
+    background-color: #dccf60;
+    margin: 1px;
+    text-align: center;
+}
+
+
+
+.naviH,.headH,.footCon,.naviadd{
+    margin-top: 1%;
+}
+.navidash{
+    margin-top: 1%;
+    margin-left: 1%;
+}
+.headerparent{
+    height: 12vh;
+    width: 100%;
+    background-color: #d5d1aa;
+    margin: 1px;
+    text-align: center;
+}
+
+.contentparent{
+
+    height: 170vh;
+    width: 100%;
+    background-color: #faf9ec;
+    margin: 1px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* .footer{
+    position: absolute;
+    bottom: 0;
+} */
+.footerparent{
+
+    height: 8vh;
+    width: 100%;
+    background-color: #dccf60;
+    margin: 1px;
+    text-align: center;
+    
+}
+
+.cardparent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2%;
+    gap: 1rem;
+}
+.card{
+    width: 30%;
+}
+.footbtn{
+    margin: 10px;
+}
+
+.Cbody{
+    background-color: #f7e22f;
+}
+.chf{
+    background-color: #e2da90;
+   
+}
+
+form{
+    margin: 1%;
+}
+.naviparent>button{
+    margin: 1%;
+}
