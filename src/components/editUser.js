@@ -42,33 +42,32 @@ function EditUser({setPerson,person}) {
 
  const addNew = async(id) =>{
     const newUser = {
-        name,
-        uid,
-        email,
-        gender,
-        phone,
-        qualification
+        name:name,
+        uid:id,
+        email:email,
+        Gender:gender,
+        phone:phone,
+        qualification:qualification,
     }
 
-    // console.log()
+    console.log(newUser)
 
-//    try{
-//        const response = await fetch(`https://645f79c67da4477ba957e18f.mockapi.io/users/${id}`,{
-//         method: "PUT",
-//         body : JSON.stringify(newUser),
-//         headers: {
-//           "Content-Type": "application/json"
-//         } 
-//        })
+   try{
+       const response = await fetch(`https://645f79c67da4477ba957e18f.mockapi.io/users/${id}`,{
+        method: "PUT",
+        body : JSON.stringify(newUser),
+        headers: {
+          "Content-Type": "application/json"
+        } 
+       })
 
-//        const data = response.json();
-//        console.log(data)
-//        setPerson()
-//        history.push("/")
-//    }
-//    catch(error){
-//     console.log(error);
-//    }
+       const data = response.json();
+       console.log(data)
+       history.push("/")
+   }
+   catch(error){
+    console.log(error);
+   }
     
  }
 
